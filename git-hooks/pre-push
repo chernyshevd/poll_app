@@ -18,7 +18,7 @@ echo_visual_line
 message="[Policy] =====Doing unit tests ...====="
 echo -e "\033[1;34mInfo: $message\033[0m"
 
-poetry run python src/poll_app/manage.py test --noinput polls
+poetry run python mysite/manage.py test --noinput polls
 
 code=$?
 

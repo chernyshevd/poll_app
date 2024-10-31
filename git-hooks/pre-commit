@@ -20,7 +20,7 @@ echo
 # fi
 
 repo_dir=`git rev-parse --show-toplevel`
-src="$repo_dir/src"
+src="$repo_dir/mysite"
 
 # получение "списка" файлов .py в каталоге src/ помещённых в индекс (staged) и подсчёт их количества
 src_changed=`git diff --line-prefix="$repo_dir/" --name-only --staged --diff-filter=AM $branch | grep "^${src}/.*\.py$"`
